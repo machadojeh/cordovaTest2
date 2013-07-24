@@ -31,8 +31,8 @@ public class CordovaTest extends DroidGap
         super.onCreate(savedInstanceState);
         
         AlertDialog alertDialog = new AlertDialog.Builder(this).create();
-        alertDialog.setTitle("Title");
-        alertDialog.setMessage("Message");
+        alertDialog.setTitle("Mensaginha");
+        alertDialog.setMessage("Está hidratado agora");
         // Set the Icon for the Dialog
         alertDialog.setIcon(R.drawable.icon);
         alertDialog.show();
