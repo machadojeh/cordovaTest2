@@ -19,6 +19,7 @@
 
 package com.teste;
 
+import android.app.AlertDialog;
 import android.os.Bundle;
 import org.apache.cordova.*;
 
@@ -28,6 +29,13 @@ public class CordovaTest extends DroidGap
     public void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
+        
+        AlertDialog alertDialog = new AlertDialog.Builder(this).create();
+        alertDialog.setTitle("Title");
+        alertDialog.setMessage("Message");
+        // Set the Icon for the Dialog
+        alertDialog.setIcon(R.drawable.icon);
+        alertDialog.show();
         // Set by <content src="index.html" /> in config.xml
         super.loadUrl(Config.getStartUrl());
         //super.loadUrl("file:///android_asset/www/index.html")
