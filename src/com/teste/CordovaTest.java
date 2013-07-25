@@ -29,7 +29,7 @@ public class CordovaTest extends DroidGap
     public void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        
+/*        
         AlertDialog alertDialog = new AlertDialog.Builder(this).create();
         alertDialog.setTitle("Mensaginha");
         alertDialog.setMessage("Está hidratado agora");
@@ -37,6 +37,7 @@ public class CordovaTest extends DroidGap
         alertDialog.setIcon(R.drawable.icon);
         alertDialog.show();
         // Set by <content src="index.html" /> in config.xml
+         */
         super.loadUrl(Config.getStartUrl());
         //super.loadUrl("file:///android_asset/www/index.html")
     }
